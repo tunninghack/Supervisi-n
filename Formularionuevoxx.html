@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    
+    <!-- Formulario con atributo para Netlify -->
+    <form name="registro" method="POST" data-netlify="true">
+        <label for="zona">Zona:</label>
+        <select id="zona" name="zona" required>
+            <option value="Usaquén">Usaquén</option>
+            <option value="San Cristóbal">San Cristóbal</option>
+        </select>
+        <br>
+
+        <label for="descripcion">Descripción:</label>
+        <input type="text" id="descripcion" name="descripcion" required>
+        <br>
+
+        <label for="imagen">Imagen (URL):</label>
+        <input type="url" id="imagen" name="imagen" required>
+        <br>
+
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" name="estado" required>
+        <br>
+
+        <label for="actualizado_por">Actualizado Por:</label>
+        <input type="text" id="actualizado_por" name="actualizado_por" required>
+        <br>
+
+        <label for="timestamp">Timestamp:</label>
+        <input type="datetime-local" id="timestamp" name="timestamp" required>
+        <br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <p>Gracias por enviar tus datos. ¡Recibirás un correo de confirmación!</p>
+</body>
+</html>
